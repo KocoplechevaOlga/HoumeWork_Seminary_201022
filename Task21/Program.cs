@@ -4,7 +4,7 @@
 
 double GetDistance3D (double X1, double Y1, double Z1, double X2, double Y2, double Z2)
 {
-double dis = Math.Round(Math.Sqrt((Y1-Y2)*(Y1-Y2) + ((X1-X2)*(X1-X2)+(Z1-Z2)*(Z1-Z2))), 2, MidpointRounding.ToZero);
+double dis = Math.Round(Math.Sqrt(Math.Pow((Y1-Y2), 2) + (Math.Pow((X1-X2), 2) + Math.Pow((Z1-Z2), 2))), 2, MidpointRounding.ToZero);
 return dis;
 }
 
