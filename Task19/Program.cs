@@ -30,7 +30,7 @@ if (number < 10000 || number > 99999)
 else
 {
     int backnumber = BackNum5(number);
-    Console.WriteLine(backnumber);
+    //Console.WriteLine(backnumber);
     string result = number == backnumber? $"{number}  ->  Да" : $"{number}  ->  Нет";
     Console.WriteLine(result);
 }
